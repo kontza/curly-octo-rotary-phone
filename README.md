@@ -1,6 +1,10 @@
 # TL;DR
-1. Start Consul, or use an existing instance running on `localhost`.
-2. Start a reader instance:
+1. Start Consul, or use an existing instance running on `localhost`:
+
+    ```
+    $ tmux new -d consul agent --dev
+    ```
+3. Start a reader instance:
 
     ```
     $ java -jar consul-kv-0.0.1-SNAPSHOT.jar read
